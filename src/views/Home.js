@@ -1,14 +1,16 @@
 import Carrousel from "../components/Carrousel";
+import Products from "../views/Products";
+import Slider from "../images/slider.png"
+import Container from 'react-bootstrap/Container';
 
 const Home = () => {
     return (
         <>
-        <div className="content-body">
-            Esta es la Home!
-        </div>
-        <Carrousel>
-
-        </Carrousel>
+            <Container>
+                <Carrousel imagen={Slider}> </Carrousel>
+               <div>Productos destacados</div>
+                <Products></Products>
+            </Container>
         </>
     )
 }
