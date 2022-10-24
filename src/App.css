@@ -42,3 +42,8 @@
   padding-top: 50px;
   min-height: 650px;
 }
+
+.container-marcas{
+  border-top: 1rem solid #51514E;
+  border-width: 100%;
+}

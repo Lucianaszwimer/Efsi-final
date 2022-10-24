@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import React from 'react';
+import { Container } from 'react-bootstrap';
 
 const Detalle = () => {
     const {id} = useParams();
@@ -14,7 +15,12 @@ const Detalle = () => {
     }, []);
     
     return (
-        <div className="content-body">Hi !!</div>
+        <Container className='content-body'>
+            <h1>{product.title} ${product.price}</h1>
+            <img src={product.thumbnail} alt=""></img>
+            <p>{product.description}</p>
+            <p>Rating: {product.rating}</p>
+        </Container>
     )
 }
 

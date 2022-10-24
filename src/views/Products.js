@@ -1,6 +1,6 @@
 import React from "react";
 import Product from "../components/Product";
-import { Row } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 
 const Products = () => {
     const [products, setProducts] = React.useState([]);
@@ -13,9 +13,11 @@ const Products = () => {
     }, []);
 
     return (
-        <Row md={3}>
-            {products.map(product => <Product key={product.id} product={product} />)}
-        </Row>
+        <Container>
+            <Row md={3}>
+                {products.map(product => <Product key={product.id} product={product} />)}
+            </Row>
+        </Container>
     );
 }
 
