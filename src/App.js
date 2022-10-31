@@ -4,6 +4,9 @@ import Detalle from './components/Detalle';
 import Layout from './components/Layout';
 import Products from './views/Products';
 import Home from './views/Home';
+import Carrito from './views/CarritoDeCompras';
+import QuienesSomos from './views/QuienesSomos';
+import Contacto from './views/Contacto';
 
 function App() {
   return (
@@ -14,6 +17,10 @@ function App() {
             <Route index path="/" element={<Home />}/>
             <Route path="/products" element={<Products />}/>
             <Route path="/detalle/:id" element={<Detalle />}/>
+            <Route path="/quienes-somos" element={<QuienesSomos />}/>
+            <Route path="/carrito-de-compras" element={<Carrito />}/>
+            <Route path="/contacto" element={<Contacto />}/>
+
           </Route>
         </Routes>
       </BrowserRouter>

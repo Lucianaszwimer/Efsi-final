@@ -47,3 +47,10 @@
   border-top: 1rem solid #51514E;
   border-width: 100%;
 }
+
+.contacto{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}

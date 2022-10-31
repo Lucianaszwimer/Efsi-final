@@ -15,6 +15,9 @@ const LayoutNavbar = () => {
           <Nav className="justify-content-end flex-grow-1 pe-3">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/products">Productos</Nav.Link>
+            <Nav.Link href="/carrito-de-compras">Carrito de compras</Nav.Link>
+            <Nav.Link href="/contacto">Contacto</Nav.Link>
+            <Nav.Link href="/quienes-somos">Quienes somos</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

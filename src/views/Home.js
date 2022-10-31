@@ -14,7 +14,7 @@ const Home = () => {
             <Container>
                 <Carrousel imagen={Slider}> </Carrousel>
                 <h3>Productos destacados</h3>
-                <Products></Products>
+                <Products limite={"?limit=6"}></Products>
                 <Marcas marca1={Ferrum} marca2={Delta} marca3={Tigre} marca4={Ips}></Marcas>
             </Container>
         </>
